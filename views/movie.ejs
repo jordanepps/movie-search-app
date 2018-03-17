@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="container">
+    <div id="movie" class="row white-text">
+        <div id="movie-poster" class="col l4">
+            <img class="responsive-img" src="<%=data['Poster']%>">
+        </div>
+        <div class="col l8">
+            <h1 id="movie-title"> <%=data['Title']%></h1>
+            <ul>
+                <li>Rated: <%=data['Rated']%> </li>
+                <li>Runtime: <%=data['Runtime']%> </li>
+                <li>Released: <%=data['Released']%> (<%=data['Country']%>) </li>
+            </ul>
+
+            <p class="movie-plot"> <%= data['Plot'] %> </p>
+        </div>
+    </div>
+    <div id="home">
+        <a class="btn" href='/'>Search Again</a>
+    </div>
+</div>
+<% include partials/footer %>
+<% console.log(data); %>

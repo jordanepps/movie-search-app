@@ -1,0 +1,17 @@
+<% include partials/header %>
+<div class="container" id="search-form">
+    <h3>Simple Movie Search</h3>
+    <form action="/results" method="GET">
+        <div class="row">
+            <div class="input-field">
+                <input id="movie-search" type="text" name="search" class="validate" required>
+                 <label for="movie-search">Search for movie</label>
+            </div>
+        </div>
+        <div id="submit-button">
+            <input class="btn" type="submit">
+        </div>
+    </form>
+</div>
+
+<% include partials/footer %>
